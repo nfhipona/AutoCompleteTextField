@@ -17,7 +17,8 @@ internal let defaultAutoCompleteButtonHeight: CGFloat = 30.0
 
 /// Supported domain names
 internal let SupportedDomainNames: [ACTFDomain] = {
-    [ACTFDomain(text: "gmail.com", weight: 0),
+    [ACTFDomain(text: "realself.com", weight: 0),
+     ACTFDomain(text: "gmail.com", weight: 0),
      ACTFDomain(text: "yahoo.com", weight: 0),
      ACTFDomain(text: "hotmail.com", weight: 0),
      ACTFDomain(text: "aol.com", weight: 0),
