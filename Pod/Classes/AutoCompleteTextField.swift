@@ -61,7 +61,7 @@ open class AutoCompleteTextField: UITextField {
     open var isRandomSuggestion: Bool = false
     
     /// Supported domain names
-    static open let domainNames: [ACTFDomain] = {
+    static public let domainNames: [ACTFDomain] = {
         return SupportedDomainNames
     }()
     
@@ -219,14 +219,14 @@ open class AutoCompleteTextField: UITextField {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineBreakMode = .byCharWrapping
         
-        let textAttributes: [String: AnyObject] = [NSFontAttributeName: font!, NSParagraphStyleAttributeName: paragraphStyle]
+        let textAttributes: [String: AnyObject] = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): font!, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): paragraphStyle]
         
         let drawingOptions: NSStringDrawingOptions = [.usesLineFragmentOrigin, .usesFontLeading]
         
-        let prefixTextRect = (text ?? "").boundingRect(with: textRectBounds.size, options: drawingOptions, attributes: textAttributes, context: nil)
+        let prefixTextRect = (text ?? "").boundingRect(with: textRectBounds.size, options: drawingOptions, attributes: convertToOptionalNSAttributedStringKeyDictionary(textAttributes), context: nil)
         
         let autoCompleteRectSize = CGSize(width: textRectBounds.width - prefixTextRect.width, height: textRectBounds.height)
-        let autoCompleteTextRect = autocompleteString.boundingRect(with: autoCompleteRectSize, options: drawingOptions, attributes: textAttributes, context: nil)
+        let autoCompleteTextRect = autocompleteString.boundingRect(with: autoCompleteRectSize, options: drawingOptions, attributes: convertToOptionalNSAttributedStringKeyDictionary(textAttributes), context: nil)
         
         let xOrigin = tRect.maxX + xOffsetCorrection
         let actfLabelFrame = actfLabel.frame
@@ -301,13 +301,13 @@ open class AutoCompleteTextField: UITextField {
     
     // MARK: - Internal Controls
     
-    internal func autoCompleteButtonDidTapped(_ sender: UIButton) {
+    @objc internal func autoCompleteButtonDidTapped(_ sender: UIButton) {
         endEditing(true)
         
         commitAutocompleteText()
     }
     
-    internal func autoCompleteTextFieldDidChanged(_ textField: UITextField) {
+    @objc internal func autoCompleteTextFieldDidChanged(_ textField: UITextField) {
         
         if !autoCompleteDisabled {
             processAutoCompleteEvent()
@@ -353,4 +353,15 @@ open class AutoCompleteTextField: UITextField {
         processAutoCompleteEvent()
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }
