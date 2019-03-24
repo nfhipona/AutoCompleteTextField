@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - AutoCompleteTextField Protocol
 
-public protocol ACTFDataSource: NSObjectProtocol {
+public protocol ACTFDataSource: AnyObject {
     
     // Required protocols
     
