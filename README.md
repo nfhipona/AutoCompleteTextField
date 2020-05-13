@@ -1,7 +1,7 @@
 # AutoCompleteTextField
 
 [![CI Status](https://img.shields.io/badge/build-passed-brightgreen.svg)](https://img.shields.io/badge/build-passed-brightgreen.svg)
-[![Version](https://img.shields.io/badge/pod-v0.1.5-blue.svg)](https://img.shields.io/badge/pod-v0.1.5-blue.svg)
+[![Version](https://img.shields.io/badge/pod-v0.5.0-blue.svg)](https://img.shields.io/badge/pod-v0.5.0-blue.svg)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://img.shields.io/badge/Lisence-MIT-yellow.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://img.shields.io/badge/platform-ios-lightgrey.svg)
@@ -18,8 +18,9 @@
 
 ## Requirements
 
-- iOS 10.0+ / Mac OS X 10.14+
-- Xcode 10.0+
+- iOS 10.0+
+- Xcode 11+
+- Swift 5+
 
 
 ## Installation
@@ -89,22 +90,24 @@ let weightedDomains = [g1, g2, g3, g4] // [ACTFDomain]
 // Storing
 
 // store single
-if g1.storeDomainForKey("Domain") {
+if g1.store(withKey: "Domain") {
     print("Store success")
 }
 
 // store multiple
-if ACTFDomain.storeDomainsForKey(domains: weightedDomains, key: "Domains") {
+if ACTFDomain.store(domains: weightedDomains, withKey: "Domains") {
     print("Store success")
 }
 
+// Retrieving
+
 // retrieved single
-if let domain = ACTFDomain.retrievedDomainForKey("Domain") {
+if let domain = ACTFDomain.domain(forKey: "Domain") {
     print("Retrieved: ", domain)
 }
 
 // retrieved multiple
-if let domains = ACTFDomain.retrievedDomainsForKey("Domains") {
+if let domains = ACTFDomain.domains(forKey: "Domains") {
     print("Retrieved: ", domains)
 }
 
