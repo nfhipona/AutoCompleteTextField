@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AutoCompleteTextField_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AutoCompleteTextField_TestsVersionString[];
+FOUNDATION_EXPORT double AutoCompleteTextFieldVersionNumber;
+FOUNDATION_EXPORT const unsigned char AutoCompleteTextFieldVersionString[];
 

@@ -1,0 +1,6 @@
+framework module AutoCompleteTextField {
+  umbrella header "AutoCompleteTextField-iOS10.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,16 +1,16 @@
 PODS:
-  - AutoCompleteTextField (0.2.3)
+  - AutoCompleteTextField (0.4.1)
 
 DEPENDENCIES:
   - AutoCompleteTextField (from `../`)
 
 EXTERNAL SOURCES:
   AutoCompleteTextField:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AutoCompleteTextField: 8129516998156b0dedd006547a2d0b67f4dd8edb
+  AutoCompleteTextField: ee9b4c15f5bd502624f6fa490a3bcaf4a092693e
 
 PODFILE CHECKSUM: 01930a76e67305cd0386e054f0f20556c07b4e48
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.9.1
