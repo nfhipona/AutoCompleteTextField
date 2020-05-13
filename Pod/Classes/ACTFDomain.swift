@@ -27,70 +27,55 @@ public struct ACTFDomain: Codable {
         
         weight += 1
     }
+}
+
+extension ACTFDomain {
     
-    public func storeDomainForKey(_ key: String) -> Bool {
+    /// Store domain with a specific key
+    public func store(withKey key: String) -> Bool {
         
         // store
-        do {
-            let data = try PropertyListEncoder().encode(self)
-            let eData = NSKeyedArchiver.archivedData(withRootObject: data)
-            UserDefaults.standard.set(eData, forKey: key)
-            
-            return true
-        }catch{ // store failed
-            return false
-        }
+        let encoded = try? PropertyListEncoder().encode(self)
+        guard let data = encoded else { return false }
+        let archived = NSKeyedArchiver.archivedData(withRootObject: data)
+        UserDefaults.standard.set(archived, forKey: key)
+        
+        return true
     }
     
     // MARK: - Type-level Functions
     
-    public static func retrievedDomainForKey(_ key: String) -> ACTFDomain? {
+    /// Retrieve domain with a specific key
+    public static func domain(forKey key: String) -> ACTFDomain? {
         
         // retrieved
-        do {
-            guard let eData = UserDefaults.standard.object(forKey: key) as? Data,
-                let dData = NSKeyedUnarchiver.unarchiveObject(with: eData) as? Data else {
-                    // retrieve failed
-                    return nil
-            }
-            
-            let domain = try PropertyListDecoder().decode(ACTFDomain.self, from: dData)
-            return domain
-        }catch{ // retrieve failed
-            return nil
-        }
+        guard let data = UserDefaults.standard.object(forKey: key) as? Data,
+            let decoded = NSKeyedUnarchiver.unarchiveObject(with: data) as? Data else { return nil } // retrieve failed
+        
+        let domain = try? PropertyListDecoder().decode(ACTFDomain.self, from: decoded)
+        return domain
     }
     
-    public static func storeDomains(_ domains: [ACTFDomain], forKey key: String) -> Bool {
+    /// Store domains for a specific key
+    public static func store(domains: [ACTFDomain], withKey key: String) -> Bool {
         
         // store
-        do {
-            let data = try PropertyListEncoder().encode(domains)
-            let eData = NSKeyedArchiver.archivedData(withRootObject: data)
-            UserDefaults.standard.set(eData, forKey: key)
-            
-            return true
-        }catch{ // store failed
-            return false
-        }
+        let encoded = try? PropertyListEncoder().encode(domains)
+        guard let data = encoded else { return false }
+        let archived = NSKeyedArchiver.archivedData(withRootObject: data)
+        UserDefaults.standard.set(archived, forKey: key)
+        
+        return true
     }
     
-    public static func retrievedDomainsForKey(_ key: String) -> [ACTFDomain]? {
+    /// Retrieve domains for a specific key
+    public static func domains(forKey key: String) -> [ACTFDomain]? {
 
         // retrieved
-        do {
-            guard let eData = UserDefaults.standard.object(forKey: key) as? Data,
-                let dData = NSKeyedUnarchiver.unarchiveObject(with: eData) as? Data else {
-                    // retrieve failed
-                    return nil
-            }
-            
-            let domains = try PropertyListDecoder().decode([ACTFDomain].self, from: dData)
-            return domains
-        }catch{ // retrieve failed
-            return nil
-        }
+        guard let data = UserDefaults.standard.object(forKey: key) as? Data,
+            let decoded = NSKeyedUnarchiver.unarchiveObject(with: data) as? Data else { return nil } // retrieve failed
+        
+        let domains = try? PropertyListDecoder().decode([ACTFDomain].self, from: decoded)
+        return domains
     }
-
 }
-
