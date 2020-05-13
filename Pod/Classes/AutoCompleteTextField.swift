@@ -157,7 +157,7 @@ open class AutoCompleteTextField: UITextField {
     
     fileprivate func setupTargetObserver() {
         
-        addTarget(self, action: #selector(AutoCompleteTextField.autoCompleteTextFieldDidChanged(_:)), for: .editingChanged)
+        addTarget(self, action: #selector(autoCompleteTextFieldDidChanged(_:)), for: .editingChanged)
     }
     
     fileprivate func performDomainSuggestionsSearch(_ queryString: String) -> ACTFDomain? {
@@ -219,14 +219,14 @@ open class AutoCompleteTextField: UITextField {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineBreakMode = .byCharWrapping
         
-        let textAttributes: [String: AnyObject] = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): font!, convertFromNSAttributedStringKey(NSAttributedString.Key.paragraphStyle): paragraphStyle]
+        let textAttributes: [NSAttributedString.Key: Any] = [.font: font!, .paragraphStyle: paragraphStyle]
         
         let drawingOptions: NSStringDrawingOptions = [.usesLineFragmentOrigin, .usesFontLeading]
         
-        let prefixTextRect = (text ?? "").boundingRect(with: textRectBounds.size, options: drawingOptions, attributes: convertToOptionalNSAttributedStringKeyDictionary(textAttributes), context: nil)
+        let prefixTextRect = (text ?? "").boundingRect(with: textRectBounds.size, options: drawingOptions, attributes: textAttributes, context: nil)
         
         let autoCompleteRectSize = CGSize(width: textRectBounds.width - prefixTextRect.width, height: textRectBounds.height)
-        let autoCompleteTextRect = autocompleteString.boundingRect(with: autoCompleteRectSize, options: drawingOptions, attributes: convertToOptionalNSAttributedStringKeyDictionary(textAttributes), context: nil)
+        let autoCompleteTextRect = autocompleteString.boundingRect(with: autoCompleteRectSize, options: drawingOptions, attributes: textAttributes, context: nil)
         
         let xOrigin = tRect.maxX + xOffsetCorrection
         let actfLabelFrame = actfLabel.frame
@@ -337,7 +337,7 @@ open class AutoCompleteTextField: UITextField {
         
         let autoCompleteButton = UIButton(frame: CGRect(x: 0, y: buttonOriginY, width: defaultAutoCompleteButtonWidth, height: buttonFrameH))
         autoCompleteButton.setImage(image, for: .normal)
-        autoCompleteButton.addTarget(self, action: #selector(AutoCompleteTextField.autoCompleteButtonDidTapped(_:)), for: .touchUpInside)
+        autoCompleteButton.addTarget(self, action: #selector(autoCompleteButtonDidTapped(_:)), for: .touchUpInside)
         
         let containerFrame = CGRect(x: 0, y: 0, width: defaultAutoCompleteButtonWidth, height: frame.height)
         let autoCompleteButtonContainerView = UIView(frame: containerFrame)
@@ -353,15 +353,4 @@ open class AutoCompleteTextField: UITextField {
         processAutoCompleteEvent()
     }
     
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
-	return input.rawValue
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
-	guard let input = input else { return nil }
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }
