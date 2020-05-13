@@ -60,21 +60,21 @@ class ViewController: UIViewController, ACTFDataSource, UITextFieldDelegate {
         weightedDomains = [g1, g2, g3, g4]
         
         // store single
-        if g1.storeDomainForKey("Domain") {
+        if g1.store(withKey: "Domain") {
             print("Store success")
         }
         // store multiple
-        if ACTFDomain.storeDomains(weightedDomains, forKey: "Domains") {
+        if ACTFDomain.store(domains: weightedDomains, withKey: "Domains") {
             print("Store success")
         }
         
         // retrieved single
-        if let domain = ACTFDomain.retrievedDomainForKey("Domain") {
+        if let domain = ACTFDomain.domain(forKey: "Domain") {
             print("Retrieved: ", domain)
         }
         
         // retrieved multiple
-        if let domains = ACTFDomain.retrievedDomainsForKey("Domains") {
+        if let domains = ACTFDomain.domains(forKey: "Domains") {
             print("Retrieved: ", domains)
         }
     }
