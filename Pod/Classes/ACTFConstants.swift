@@ -12,8 +12,8 @@ import UIKit
 
 // MARK: - Internal
 
-internal let defaultAutoCompleteButtonWidth: CGFloat = 30.0
-internal let defaultAutoCompleteButtonHeight: CGFloat = 30.0
+internal let DefaultButtonWidth: CGFloat = 30.0
+internal let DefaultButtonHeight: CGFloat = 30.0
 
 /// Supported domain names
 internal let SupportedDomainNames: [ACTFDomain] = {

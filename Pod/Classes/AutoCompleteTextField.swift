@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 
-open class AutoCompleteTextField: UITextField {
+public class AutoCompleteTextField: UITextField {
     
     /// AutoCompleteTextField data source
-    weak open var dataSource: ACTFDataSource?
+    weak public var dataSource: ACTFDataSource?
     
     /// AutoCompleteTextField data source accessible through IB
     @IBOutlet weak internal var actfDataSource: AnyObject? {
@@ -52,13 +52,13 @@ open class AutoCompleteTextField: UITextField {
     }
     
     /// Auto completion flag
-    open var autoCompleteDisabled: Bool = false
+    public var autoCompleteDisabled: Bool = false
     
     /// Case search
-    open var ignoreCase: Bool = true
+    public var ignoreCase: Bool = true
     
     /// Randomize suggestion flag. Default to ``false, will always use first found suggestion
-    open var isRandomSuggestion: Bool = false
+    public var isRandomSuggestion: Bool = false
     
     /// Supported domain names
     static public let domainNames: [ACTFDomain] = {
@@ -66,11 +66,11 @@ open class AutoCompleteTextField: UITextField {
     }()
     
     /// Text font settings
-    override open var font: UIFont? {
+    override public var font: UIFont? {
         didSet { actfLabel.font = font }
     }
     
-    open var suggestionColor: UIColor? {
+    public var suggestionColor: UIColor? {
         didSet {
             actfLabel.textColor = suggestionColor
         }
@@ -103,16 +103,16 @@ open class AutoCompleteTextField: UITextField {
         setupTargetObserver()
     }
     
-    override open func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         prepareLayers()
         setupTargetObserver()
     }
     
+    // MARK: - Responders
     
-    // MARK: - R
-    override open func becomeFirstResponder() -> Bool {
+    override public func becomeFirstResponder() -> Bool {
         let becomeFirstResponder = super.becomeFirstResponder()
         
         if !autoCompleteDisabled {
@@ -128,7 +128,7 @@ open class AutoCompleteTextField: UITextField {
         return becomeFirstResponder
     }
     
-    override open func resignFirstResponder() -> Bool {
+    override public func resignFirstResponder() -> Bool {
         let resignFirstResponder = super.resignFirstResponder()
         
         if !autoCompleteDisabled {
@@ -139,9 +139,9 @@ open class AutoCompleteTextField: UITextField {
         
         return resignFirstResponder
     }
-
     
     // MARK: - Private Funtions
+    
     fileprivate func prepareLayers() {
         
         actfLabel = ACTFLabel(frame: .zero)
@@ -237,7 +237,6 @@ open class AutoCompleteTextField: UITextField {
             let autoCompleteRect = CGRect(x: textRectBounds.width, y: finalY, width: 0, height: actfLabelFrame.height)
             
             return autoCompleteRect
-            
         }else{
             let autoCompleteRect = CGRect(x: xOrigin, y: finalY, width: autoCompleteTextRect.width, height: actfLabelFrame.height)
             
@@ -246,9 +245,7 @@ open class AutoCompleteTextField: UITextField {
     }
     
     fileprivate func processAutoCompleteEvent() {
-        if autoCompleteDisabled {
-            return
-        }
+        if autoCompleteDisabled { return }
         
         guard let textString = text else { return }
         
@@ -298,8 +295,11 @@ open class AutoCompleteTextField: UITextField {
         text = originalInputString + autoCompleteString
         sendActions(for: .valueChanged)
     }
-    
-    // MARK: - Internal Controls
+}
+
+// MARK: - Internal Controls
+
+extension AutoCompleteTextField {
     
     @objc internal func autoCompleteButtonDidTapped(_ sender: UIButton) {
         endEditing(true)
@@ -313,33 +313,37 @@ open class AutoCompleteTextField: UITextField {
             processAutoCompleteEvent()
         }
     }
-    
-    // MARK: - Public Controls
+}
+
+// MARK: - Public Controls
+
+extension AutoCompleteTextField {
     
     /// Set delimiter. Will perform search if delimiter is found
-    open func setDelimiter(_ delimiterString: String) {
+    public func setDelimiter(_ delimiterString: String) {
         delimiter = CharacterSet(charactersIn: delimiterString)
     }
     
     /// Show complete button with custom image
-    open func showAutoCompleteButtonWithImage(_ image: UIImage? = UIImage(named: "checked", in: Bundle(for: AutoCompleteTextField.self), compatibleWith: nil), viewMode: AutoCompleteButtonViewMode) {
+    public func showAutoCompleteButtonWithImage(_ image: UIImage? = UIImage(named: "checked", in: Bundle(for: AutoCompleteTextField.self), compatibleWith: nil), viewMode: AutoCompleteButtonViewMode) {
         
         var buttonFrameH: CGFloat = 0.0
         var buttonOriginY: CGFloat = 0.0
         
-        if frame.height > defaultAutoCompleteButtonHeight {
-            buttonFrameH = defaultAutoCompleteButtonHeight
-            buttonOriginY = (frame.height - defaultAutoCompleteButtonHeight) / 2
+        if frame.height > DefaultButtonHeight {
+            buttonFrameH = DefaultButtonHeight
+            buttonOriginY = (frame.height - DefaultButtonHeight) / 2
         }else{
             buttonFrameH = frame.height
             buttonOriginY = 0
         }
         
-        let autoCompleteButton = UIButton(frame: CGRect(x: 0, y: buttonOriginY, width: defaultAutoCompleteButtonWidth, height: buttonFrameH))
+        let buttonFrame = CGRect(x: 0, y: buttonOriginY, width: DefaultButtonWidth, height: buttonFrameH)
+        let autoCompleteButton = UIButton(frame: buttonFrame)
         autoCompleteButton.setImage(image, for: .normal)
         autoCompleteButton.addTarget(self, action: #selector(autoCompleteButtonDidTapped(_:)), for: .touchUpInside)
         
-        let containerFrame = CGRect(x: 0, y: 0, width: defaultAutoCompleteButtonWidth, height: frame.height)
+        let containerFrame = CGRect(x: 0, y: 0, width: DefaultButtonWidth, height: frame.height)
         let autoCompleteButtonContainerView = UIView(frame: containerFrame)
         autoCompleteButtonContainerView.addSubview(autoCompleteButton)
         
@@ -348,9 +352,8 @@ open class AutoCompleteTextField: UITextField {
     }
     
     /// Force text completion event
-    open func forceRefresh() {
+    public func forceRefresh() {
         
         processAutoCompleteEvent()
     }
-    
 }
