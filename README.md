@@ -122,7 +122,7 @@ Neil Francis Ramirez Hipona, nferocious76@gmail.com
 
 ### About
 
-This project was inpired by 'HTAutocompleteTextField' an Objc-C framework of the same feature.
+This project was inpired by 'HTAutocompleteTextField' an Objc-C framework of a similar feature.
 
 ## License
 
