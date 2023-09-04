@@ -60,7 +60,7 @@ extension ACTFDomain {
     
     /// Store domains for a specific key
     @discardableResult
-    public static func store(domains: [ACTFDomain], withKey key: String) -> [String] {
+    public static func store(domains: [ACTFDomain]) -> [String] {
         var errors: [String] = []
         for domain in domains {
             if !domain.store() {
