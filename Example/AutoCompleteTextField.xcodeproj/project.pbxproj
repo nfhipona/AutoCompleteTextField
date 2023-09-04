@@ -488,7 +488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E84DB578C3FFC175EE2EBDA1 /* Pods-AutoCompleteTextField_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKF34AM7UT;
 				INFOPLIST_FILE = AutoCompleteTextField/Info.plist;
@@ -506,7 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 651D3C0C3080C0E54BC0ED3B /* Pods-AutoCompleteTextField_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKF34AM7UT;
 				INFOPLIST_FILE = AutoCompleteTextField/Info.plist;
@@ -524,7 +524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 726789C5EAA36CFFB463E190 /* Pods-AutoCompleteTextField_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = RKF34AM7UT;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,7 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F457A2F76CC4C18A939B3148 /* Pods-AutoCompleteTextField_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = RKF34AM7UT;
 				FRAMEWORK_SEARCH_PATHS = (
