@@ -11,18 +11,23 @@ import Foundation
 public struct ACTFDomain: Codable {
     public let text: String
     public var weight: Int
+    /// Will auto store on `weight` update using `text` default to `true`
+    public let isAutoStoringEnabled: Bool
     
     // MARK: - Initializer
     
-    public init(text t: String, weight w: Int) {
+    public init(text t: String, weight w: Int, isAutoStoringEnabled autoStoringEnabled: Bool = true) {
         text = t
         weight = w
+        isAutoStoringEnabled = autoStoringEnabled
     }
     
     // MARK: - Functions
     
     public mutating func updateWeightUsage() {
         weight += 1
+        
+        store(withKey: text)
     }
 }
 
