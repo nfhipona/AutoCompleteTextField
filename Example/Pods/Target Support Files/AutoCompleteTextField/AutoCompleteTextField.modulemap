@@ -1,5 +1,5 @@
 framework module AutoCompleteTextField {
-  umbrella header "AutoCompleteTextField-iOS8.3-umbrella.h"
+  umbrella header "AutoCompleteTextField-umbrella.h"
 
   export *
   module * { export * }

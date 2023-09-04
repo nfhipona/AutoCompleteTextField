@@ -1,7 +1,10 @@
 {
   "name": "AutoCompleteTextField",
-  "version": "0.4.1",
-  "swift_versions": "4.2",
+  "version": "0.5.0",
+  "swift_versions": "5",
+  "platforms": {
+    "ios": "12.0"
+  },
   "summary": "TextField Subclass with auto completion feature.",
   "description": "\"A TextField Subclass that has input suggestion for user's convenience, when auto completion feature kicks in, it uses the suggestions from the datasource provided by the user or from the default domain.\"",
   "homepage": "https://github.com/nferocious76/AutoCompleteTextField",
@@ -11,13 +14,9 @@
   },
   "source": {
     "git": "https://github.com/nferocious76/AutoCompleteTextField.git",
-    "tag": "0.4.1"
+    "tag": "0.5.0"
   },
-  "platforms": {
-    "ios": "10.0"
-  },
-  "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resources": "Pod/Assets/*.xcassets",
-  "swift_version": "4.2"
+  "swift_version": "5"
 }
