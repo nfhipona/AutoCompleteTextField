@@ -8,6 +8,7 @@
 
 ![ezgif com-resize 1](https://cloud.githubusercontent.com/assets/6511079/16903266/0f2c58e2-4c50-11e6-827c-57b47992c9b2.gif)
 
+
 ## Features
 - [x] Provides a subclass of UITextField that has suggestion from input
 - [x] Has autocomplete input feature
@@ -97,6 +98,7 @@ if g1.store() {
     print("Store success")
 }
 
+// store multiple
 let errors = ACTFDomain.store(domains: weightedDomains)
 if errors.count > 0 {
     print("Store domain errors: ", errors)
