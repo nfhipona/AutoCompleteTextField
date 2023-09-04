@@ -35,13 +35,14 @@ extension ACTFDomain {
     
     /// Store domain with a specific key
     @discardableResult
-    public func store(withKey key: String) -> Bool {
+    public func store(withKey key: String? = nil) -> Bool {
         // store
+        let storeKey = key ?? text
         guard let encoded = try? PropertyListEncoder().encode(self),
               let archived = try? NSKeyedArchiver.archivedData(withRootObject: encoded, requiringSecureCoding: true)
         else { return false }
         
-        UserDefaults.standard.set(archived, forKey: key)
+        UserDefaults.standard.set(archived, forKey: storeKey)
         return true
     }
     
