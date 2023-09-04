@@ -162,7 +162,7 @@ public class AutoCompleteTextField: UITextField {
     
     fileprivate func performDomainSuggestionsSearch(_ queryString: String) -> ACTFDomain? {
         
-        guard let dataSource = dataSource else { return processSourceData(SupportedDomainNames, queryString: queryString) }
+        guard let dataSource else { return processSourceData(SupportedDomainNames, queryString: queryString) }
         let sourceData = dataSource.autoCompleteTextFieldDataSource(self)
         
         return processSourceData(sourceData, queryString: queryString)
@@ -247,12 +247,12 @@ public class AutoCompleteTextField: UITextField {
     fileprivate func processAutoCompleteEvent() {
         if autoCompleteDisabled { return }
         
-        guard let textString = text else { return }
+        guard let text, text.count > 0 else { return }
         
         if let delimiter {
-            guard let _ = textString.rangeOfCharacter(from: delimiter) else { return }
+            guard let _ = text.rangeOfCharacter(from: delimiter) else { return }
             
-            let textComponents = textString.components(separatedBy: delimiter)
+            let textComponents = text.components(separatedBy: delimiter)
             
             if textComponents.count > 2 { return }
             
@@ -261,14 +261,14 @@ public class AutoCompleteTextField: UITextField {
             let domain = performDomainSuggestionsSearch(textToLookFor)
             updateAutocompleteLabel(domain: domain, originalString: textToLookFor)
         }else{
-            let domain = performDomainSuggestionsSearch(textString)
-            updateAutocompleteLabel(domain: domain, originalString: textString)
+            let domain = performDomainSuggestionsSearch(text)
+            updateAutocompleteLabel(domain: domain, originalString: text)
         }
     }
     
     fileprivate func updateAutocompleteLabel(domain: ACTFDomain?, originalString stringFilter: String) {
         
-        guard let domain = domain else {
+        guard let domain else {
             actfLabel.text = ""
             actfLabel.sizeToFit()
             
