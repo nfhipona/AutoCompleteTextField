@@ -299,8 +299,12 @@ public class AutoCompleteTextField: UITextField {
         actfLabel.text = ""
         actfLabel.sizeToFit()
         actfLabel.domain.updateWeightUsage()
-        actfLabel.domain = nil
         
+        if let actfDelegate {
+            actfDelegate.autoCompleteTextField(self, didSuggestDomain: actfLabel.domain)
+        }
+        
+        actfLabel.domain = nil
         text = originalInputString + autoCompleteString
         sendActions(for: .valueChanged)
     }

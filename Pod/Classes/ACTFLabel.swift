@@ -10,6 +10,5 @@ import Foundation
 import UIKit
 
 public class ACTFLabel: UILabel {
-    
-    public var domain: ACTFDomain!
+    public unowned var domain: ACTFDomain!
 }

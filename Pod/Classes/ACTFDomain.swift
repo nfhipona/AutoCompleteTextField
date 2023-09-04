@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct ACTFDomain: Codable {
+public class ACTFDomain: Codable {
     public let text: String
     public var weight: Int
     /// Will auto store on `weight` update using `text` default to `true`
@@ -24,7 +24,7 @@ public struct ACTFDomain: Codable {
     
     // MARK: - Functions
     
-    public mutating func updateWeightUsage() {
+    public func updateWeightUsage() {
         weight += 1
         store()
     }
@@ -49,13 +49,25 @@ extension ACTFDomain {
     
     /// Retrieve domain with a specific key
     @discardableResult
-    public static func domain(forKey key: String) -> ACTFDomain? {
+    public static func domain(for key: String) -> ACTFDomain? {
         // retrieved
         guard let data = UserDefaults.standard.object(forKey: key) as? Data,
               let decoded = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSData.self, from: data) as? Data,
               let domain = try? PropertyListDecoder().decode(ACTFDomain.self, from: decoded)
         else { return nil } // retrieve failed
         return domain
+    }
+    
+    /// Retrieve domains with keys
+    @discardableResult
+    public static func domain(for keys: [String]) -> [ACTFDomain] {
+        var collection: [ACTFDomain] = []
+        for key in keys {
+            if let domain = domain(for: key) {
+                collection.append(domain)
+            }
+        }
+        return collection
     }
     
     /// Store domains for a specific key
@@ -67,6 +79,7 @@ extension ACTFDomain {
                 errors.append("Domain '\(domain.text)' store failed")
             }
         }
+        
         return errors
     }
 }

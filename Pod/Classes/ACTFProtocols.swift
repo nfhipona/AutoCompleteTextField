@@ -18,7 +18,7 @@ public protocol ACTFDataSource: AnyObject {
     func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [ACTFDomain]
 }
 
-public protocol ACTFDelegate: UITextFieldDelegate {
+public protocol ACTFDelegate: AnyObject {
     /// will be called upon successful suggestion
     func autoCompleteTextField(_ autoCompleteTextField: AutoCompleteTextField, didSuggestDomain domain: ACTFDomain)
 }
