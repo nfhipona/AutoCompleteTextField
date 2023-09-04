@@ -35,9 +35,8 @@ extension ACTFDomain {
     public func store(withKey key: String) -> Bool {
         
         // store
-        let encoded = try? PropertyListEncoder().encode(self)
-        guard let data = encoded else { return false }
-        let archived = NSKeyedArchiver.archivedData(withRootObject: data)
+        guard let encoded = try? PropertyListEncoder().encode(self) else { return false }
+        let archived = NSKeyedArchiver.archivedData(withRootObject: encoded)
         UserDefaults.standard.set(archived, forKey: key)
         
         return true
@@ -60,9 +59,8 @@ extension ACTFDomain {
     public static func store(domains: [ACTFDomain], withKey key: String) -> Bool {
         
         // store
-        let encoded = try? PropertyListEncoder().encode(domains)
-        guard let data = encoded else { return false }
-        let archived = NSKeyedArchiver.archivedData(withRootObject: data)
+        guard let encoded = try? PropertyListEncoder().encode(domains) else { return false }
+        let archived = NSKeyedArchiver.archivedData(withRootObject: encoded)
         UserDefaults.standard.set(archived, forKey: key)
         
         return true

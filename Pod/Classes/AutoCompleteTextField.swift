@@ -249,7 +249,7 @@ public class AutoCompleteTextField: UITextField {
         
         guard let textString = text else { return }
         
-        if let delimiter = delimiter {
+        if let delimiter {
             guard let _ = textString.rangeOfCharacter(from: delimiter) else { return }
             
             let textComponents = textString.components(separatedBy: delimiter)
