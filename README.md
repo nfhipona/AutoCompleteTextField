@@ -18,9 +18,8 @@
 
 ## Requirements
 
-- iOS 10.0+
-- Xcode 11+
-- Swift 5+
+- iOS 12.0+
+- Swift 5.x
 
 
 ## Installation
@@ -61,19 +60,23 @@ myTextField.showAutoCompleteButtonWithImage(UIImage(named: "checked"), viewMode:
 
 // Providing data source to get the suggestion from inputs
 func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [ACTFWeightedDomain] {
-
     return weightedDomains // AutoCompleteTextField.domainNames // [ACTFDomain(text: "gmail.com", weight: 0), ACTFDomain(text: "hotmail.com", weight: 0), ACTFDomain(text: "domain.net", weight: 0)]
+}
+
+// optional delegate for checking what was suggested
+func autoCompleteTextField(_ autoCompleteTextField: AutoCompleteTextField, didSuggestDomain domain: ACTFDomain) {
+    print("Suggested domain: \(domain.text) - weight: \(domain.weight)")
 }
 
 ```
 
 ## ACTFDomain
 
-`ACTFDomain` is struct type that conforms to the `Codable`. User can store and retrieve smart domains.
+`ACTFDomain` is class type that conforms to the `Codable`. User can store and retrieve smart domains.
 
 One example may be 'gmail.com' and 'georgetown.edu'. Users are more likely to have a 'gmail.com' account so we would want that to show up before 'georgetown.edu', even though that is out of alphabetical order.
 
-`ACTFDomain` is sorted based on its usage.
+`ACTFDomain` is sorted based on its usage with auto storing flag that is default to true.
 
 This is just one example. Manually providing a suggestion gives more flexibility and does not force the usage of an array of strings. 
 
@@ -90,26 +93,26 @@ let weightedDomains = [g1, g2, g3, g4] // [ACTFDomain]
 // Storing
 
 // store single
-if g1.store(withKey: "Domain") {
+if g1.store() {
     print("Store success")
 }
 
-// store multiple
-if ACTFDomain.store(domains: weightedDomains, withKey: "Domains") {
-    print("Store success")
+let errors = ACTFDomain.store(domains: weightedDomains)
+if errors.count > 0 {
+    print("Store domain errors: ", errors)
 }
 
 // Retrieving
 
 // retrieved single
-if let domain = ACTFDomain.domain(forKey: "Domain") {
-    print("Retrieved: ", domain)
+if let domain = ACTFDomain.domain(for: "gmail.com") {
+    print("Retrieved single: ", domain.text, domain.weight)
 }
 
 // retrieved multiple
-if let domains = ACTFDomain.domains(forKey: "Domains") {
-    print("Retrieved: ", domains)
-}
+let keys = ["gmail.com", "googlemail.com", "google.com", "georgetown.edu"]
+let retriedDomains = ACTFDomain.domain(for: keys)
+print("Retrieved domains: ", retriedDomains.map ({ "Domain: \($0.text) - weight: \($0.weight)" }))
 
 ```
 
