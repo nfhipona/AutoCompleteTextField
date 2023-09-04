@@ -9,7 +9,7 @@
 import UIKit
 import AutoCompleteTextField
 
-class ViewController: UIViewController, ACTFDataSource, UITextFieldDelegate {
+class ViewController: UIViewController, ACTFDataSource, ACTFDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var txtEmail: AutoCompleteTextField!
     @IBOutlet weak var txtReEmail: AutoCompleteTextField!
@@ -53,30 +53,35 @@ class ViewController: UIViewController, ACTFDataSource, UITextFieldDelegate {
         actfWithDelegateAndDataSource.backgroundColor = .red
         view.addSubview(actfWithDelegateAndDataSource)*/
         
-        let g1 = ACTFDomain(text: "gmail.com", weight: 10)
-        let g2 = ACTFDomain(text: "googlemail.com", weight: 5)
-        let g3 = ACTFDomain(text: "google.com", weight: 4)
-        let g4 = ACTFDomain(text: "georgetown.edu", weight: 1)
-        weightedDomains = [g1, g2, g3, g4]
-        
-        // store single
-        if g1.store(withKey: "Domain") {
-            print("Store success")
-        }
-        // store multiple
-        if ACTFDomain.store(domains: weightedDomains, withKey: "Domains") {
-            print("Store success")
+        let keys = ["gmail.com", "googlemail.com", "google.com", "georgetown.edu"]
+        let retriedDomains = ACTFDomain.domain(for: keys)
+        if retriedDomains.count > 0 {
+            weightedDomains = retriedDomains
+        } else {
+            let g1 = ACTFDomain(text: "gmail.com", weight: 10)
+            let g2 = ACTFDomain(text: "googlemail.com", weight: 5)
+            let g3 = ACTFDomain(text: "google.com", weight: 4)
+            let g4 = ACTFDomain(text: "georgetown.edu", weight: 1)
+            weightedDomains = [g1, g2, g3, g4]
+            
+            // store single
+            if g1.store() {
+                print("Store: \(g1.text) success")
+            }
+            
+            // store multiple
+            let errors = ACTFDomain.store(domains: weightedDomains)
+            if errors.count > 0 {
+                print("Store domain errors: ", errors)
+            }
         }
         
         // retrieved single
-        if let domain = ACTFDomain.domain(forKey: "Domain") {
-            print("Retrieved: ", domain)
+        if let domain = ACTFDomain.domain(for: "gmail.com") {
+            print("Retrieved single: ", domain.text, domain.weight)
         }
-        
-        // retrieved multiple
-        if let domains = ACTFDomain.domains(forKey: "Domains") {
-            print("Retrieved: ", domains)
-        }
+
+        print("Retrieved domains: ", retriedDomains.map ({ "Domain: \($0.text) - weight: \($0.weight)" }))
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,6 +94,12 @@ class ViewController: UIViewController, ACTFDataSource, UITextFieldDelegate {
     func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [ACTFDomain] {
         
         return weightedDomains // AutoCompleteTextField.domainNames // [ACTFDomain(text: "gmail.com", weight: 0), ACTFDomain(text: "hotmail.com", weight: 0), ACTFDomain(text: "domain.net", weight: 0)]
+    }
+    
+    // MARK: - ACTFDelegate
+    
+    func autoCompleteTextField(_ autoCompleteTextField: AutoCompleteTextField, didSuggestDomain domain: ACTFDomain) {
+        print("Suggested domain: \(domain.text) - weight: \(domain.weight)")
     }
     
     // MARK: - UITextFieldDelegate
@@ -104,4 +115,3 @@ class ViewController: UIViewController, ACTFDataSource, UITextFieldDelegate {
         }
     }
 }
-

@@ -14,11 +14,20 @@ public class AutoCompleteTextField: UITextField {
     
     /// AutoCompleteTextField data source
     weak public var dataSource: ACTFDataSource?
+    /// AutoCompleteTextField optional notifier delegate
+    weak public var actfDelegate: ACTFDelegate?
     
     /// AutoCompleteTextField data source accessible through IB
-    @IBOutlet weak internal var actfDataSource: AnyObject? {
+    @IBOutlet weak internal var _actfDataSource: AnyObject? {
         didSet {
-            dataSource = actfDataSource as? ACTFDataSource
+            dataSource = _actfDataSource as? ACTFDataSource
+        }
+    }
+    
+    /// AutoCompleteTextField data source accessible through IB
+    @IBOutlet weak internal var _actfDelegate: AnyObject? {
+        didSet {
+            actfDelegate = _actfDelegate as? ACTFDelegate
         }
     }
     
@@ -162,7 +171,7 @@ public class AutoCompleteTextField: UITextField {
     
     fileprivate func performDomainSuggestionsSearch(_ queryString: String) -> ACTFDomain? {
         
-        guard let dataSource = dataSource else { return processSourceData(SupportedDomainNames, queryString: queryString) }
+        guard let dataSource else { return processSourceData(SupportedDomainNames, queryString: queryString) }
         let sourceData = dataSource.autoCompleteTextFieldDataSource(self)
         
         return processSourceData(sourceData, queryString: queryString)
@@ -247,12 +256,12 @@ public class AutoCompleteTextField: UITextField {
     fileprivate func processAutoCompleteEvent() {
         if autoCompleteDisabled { return }
         
-        guard let textString = text else { return }
+        guard let text, text.count > 0 else { return }
         
-        if let delimiter = delimiter {
-            guard let _ = textString.rangeOfCharacter(from: delimiter) else { return }
+        if let delimiter {
+            guard let _ = text.rangeOfCharacter(from: delimiter) else { return }
             
-            let textComponents = textString.components(separatedBy: delimiter)
+            let textComponents = text.components(separatedBy: delimiter)
             
             if textComponents.count > 2 { return }
             
@@ -261,14 +270,14 @@ public class AutoCompleteTextField: UITextField {
             let domain = performDomainSuggestionsSearch(textToLookFor)
             updateAutocompleteLabel(domain: domain, originalString: textToLookFor)
         }else{
-            let domain = performDomainSuggestionsSearch(textString)
-            updateAutocompleteLabel(domain: domain, originalString: textString)
+            let domain = performDomainSuggestionsSearch(text)
+            updateAutocompleteLabel(domain: domain, originalString: text)
         }
     }
     
     fileprivate func updateAutocompleteLabel(domain: ACTFDomain?, originalString stringFilter: String) {
         
-        guard let domain = domain else {
+        guard let domain else {
             actfLabel.text = ""
             actfLabel.sizeToFit()
             
@@ -290,8 +299,12 @@ public class AutoCompleteTextField: UITextField {
         actfLabel.text = ""
         actfLabel.sizeToFit()
         actfLabel.domain.updateWeightUsage()
-        actfLabel.domain = nil
         
+        if let actfDelegate {
+            actfDelegate.autoCompleteTextField(self, didSuggestDomain: actfLabel.domain)
+        }
+        
+        actfLabel.domain = nil
         text = originalInputString + autoCompleteString
         sendActions(for: .valueChanged)
     }

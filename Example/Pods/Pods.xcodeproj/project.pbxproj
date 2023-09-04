@@ -3,167 +3,120 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024B697646021116F1464FA67F1A4F98 /* ACTFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E77E1E7C50411A125F61DE85E5BA751 /* ACTFConstants.swift */; };
-		0E833DFCABD9C53E129476523BF80E4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FC48C1A5E1CFFD996323AD5254E0F6 /* Images.xcassets */; };
-		1C80DE6D31B3C18EA5E39A4A0A7F65AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1DDBCC20991E5E4FBD6500279C16DE82 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3CDD7B27F68F44CCE3D7B6687188C /* AutoCompleteTextField.swift */; };
-		1E6AD9DEACA94B84B5C01A198D099746 /* AutoCompleteTextField-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5173D87B85475F51CE624CFE275677 /* AutoCompleteTextField-iOS10.0-dummy.m */; };
-		4393CF2BBA4001CD33F45A2DAD6629DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FC48C1A5E1CFFD996323AD5254E0F6 /* Images.xcassets */; };
-		49F6254A2B9D1019F004AFAE61167931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4CA4A518C20F4F63759605690F05D10A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		52228B4643D9A10719D0A119F0376BC8 /* Pods-AutoCompleteTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3664BE3B34267766E6AC86E697A2C19 /* Pods-AutoCompleteTextField_Example-dummy.m */; };
-		687A380D221D43B7B7DB7777A128412E /* ACTFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FAE78685CAA53A4C1570FCC22AF2A /* ACTFLabel.swift */; };
-		774D82529A88838B10D8C30EEC654CFB /* ACTFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FAE78685CAA53A4C1570FCC22AF2A /* ACTFLabel.swift */; };
-		8153FBC53066E6BBB7F07D85D6A8EA8F /* AutoCompleteTextField-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE49FE32FE368DCB1F79E508D7E61C6 /* AutoCompleteTextField-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84C16DEAA183E1EEE6211978B64F7D62 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3CDD7B27F68F44CCE3D7B6687188C /* AutoCompleteTextField.swift */; };
-		9C7904DFA7852A5401519A1DAE5EEF7E /* ACTFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E77E1E7C50411A125F61DE85E5BA751 /* ACTFConstants.swift */; };
-		9D3C04EFA7B0D9676C351FE10C4FD510 /* Pods-AutoCompleteTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758F0B166FA6CFFD362F805172281BC4 /* Pods-AutoCompleteTextField_Tests-dummy.m */; };
-		AD3AD64BB4400844402379D57F632984 /* AutoCompleteTextField-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AACBC41A8B1F13C3E09371BBC213B915 /* AutoCompleteTextField-iOS8.3-dummy.m */; };
-		C06C4B918F66C419A308E41902E1E43B /* ACTFProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE838CAD6DE7119A9EF83BA67A133E /* ACTFProtocols.swift */; };
-		D682EB5903BCA40FF47855CF48F4F1B1 /* ACTFDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D3B8B80EEBC776F19AA20C31BFBBB /* ACTFDomain.swift */; };
-		DAFB6BC45DC7837303B25B7973A6C4A4 /* Pods-AutoCompleteTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C96A80A3022CB6CC00388CA3AF2C2F /* Pods-AutoCompleteTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E09B578DFD8CEFF329A8AFA1BF7618F8 /* AutoCompleteTextField-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 887B670BDC59D0A3AFC3E624D4DA0B75 /* AutoCompleteTextField-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5FE41547AA8D8A3B1219E9B0F5FD193 /* ACTFDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D3B8B80EEBC776F19AA20C31BFBBB /* ACTFDomain.swift */; };
-		EB8FDA5E7F96BE1D598DA62E997E43CD /* Pods-AutoCompleteTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DED106F6650C6925419715F830EB1C86 /* Pods-AutoCompleteTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE348B0D4F7A4AB41F1EAFF74188A9AE /* ACTFProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE838CAD6DE7119A9EF83BA67A133E /* ACTFProtocols.swift */; };
-		FF81242566B22FC0FB435C0BBCDF2BA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		065C10CF1D38F255CE1C0DC66A6EFE13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0CAF5E1D198BED3EA8C8425105053F07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4E871FC430DFD135FA2AAFF8A3A00532 /* ACTFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261D9EE165E17E1D62CEDD7E3731A272 /* ACTFConstants.swift */; };
+		54E9D0504BDAEB49E3336550D9BFC5F2 /* ACTFDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944BC88B018BD26E8A25AF30C7CA158 /* ACTFDomain.swift */; };
+		6EEDF79F2222CFAA7DE8E6E92320D210 /* Pods-AutoCompleteTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C96A80A3022CB6CC00388CA3AF2C2F /* Pods-AutoCompleteTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736370830D0E803A202E81AF541BDE26 /* AutoCompleteTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A91A109E157ABB01BD94164C82D8C /* AutoCompleteTextField-dummy.m */; };
+		88385B359A78B5BDCE59D39A1836AADF /* AutoCompleteTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3CEDAC7EE6BF8D3C48E8A64DAFB0B7 /* AutoCompleteTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F1CC68BB783E89D434D91B51ADEE94 /* Pods-AutoCompleteTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3664BE3B34267766E6AC86E697A2C19 /* Pods-AutoCompleteTextField_Example-dummy.m */; };
+		B0F8DD8EDE7A2A5235710EF40F6DD2EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF059D2EF44814CA9B68B3B7CF3F6D62 /* Images.xcassets */; };
+		B34915E8CF88393D67E9BE172F9D3BDA /* ACTFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC2D670074C3A9BA18C50B48768C8D /* ACTFLabel.swift */; };
+		BAD14D64534A31860D49B6971E0237B6 /* Pods-AutoCompleteTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758F0B166FA6CFFD362F805172281BC4 /* Pods-AutoCompleteTextField_Tests-dummy.m */; };
+		D3E5B89ECFDD63D8A364933B46D95721 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9274D7BA478A19B5775FF3458A07B6 /* AutoCompleteTextField.swift */; };
+		DEA6C5D3A07CCD43B0D603DB24C08EBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E0CB054C11F5C8F84B954EBA5B2F40DA /* ACTFProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A1D5774F8BC265C2A210DCB0B0B17 /* ACTFProtocols.swift */; };
+		F2BA31D2C1CB2744AFAE86CB13488315 /* Pods-AutoCompleteTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DED106F6650C6925419715F830EB1C86 /* Pods-AutoCompleteTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6733B2DBD9EBE42A7797FB3686169EEF /* PBXContainerItemProxy */ = {
+		11CB603D0593413726726C1168316A78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7AF8C35DA7AF233870CC954115506C6D;
-			remoteInfo = "AutoCompleteTextField-iOS8.3";
+			remoteGlobalIDString = DC4A1A5AA982B1775A2698C96685730A;
+			remoteInfo = AutoCompleteTextField;
 		};
-		E1FF9A6E8D9AF32DCBE3885F806ED06E /* PBXContainerItemProxy */ = {
+		953F654CA9C17A215B0960AEBEA15D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B40C086B3607D05356B76D5DB7E80409;
-			remoteInfo = "AutoCompleteTextField-iOS10.0";
+			remoteGlobalIDString = DC4A1A5AA982B1775A2698C96685730A;
+			remoteInfo = AutoCompleteTextField;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C8259899EF94FE45167E271F55D056D /* AutoCompleteTextField-iOS8.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AutoCompleteTextField-iOS8.3.release.xcconfig"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3.release.xcconfig"; sourceTree = "<group>"; };
 		12C92FA274E02D6AE95C77AAC9231DEF /* Pods-AutoCompleteTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoCompleteTextField_Tests-Info.plist"; sourceTree = "<group>"; };
-		1A7C04AA307006A26D99C5892569A35F /* AutoCompleteTextField-iOS10.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AutoCompleteTextField-iOS10.0.debug.xcconfig"; sourceTree = "<group>"; };
 		21267F9A24766F58C9158519BA82D446 /* Pods-AutoCompleteTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoCompleteTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		21C96A80A3022CB6CC00388CA3AF2C2F /* Pods-AutoCompleteTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoCompleteTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		25FAED8A4011E36FB1B976690CAA5D3E /* Pods-AutoCompleteTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoCompleteTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2E243F1EB9C33BB0469621CCA12091C2 /* AutoCompleteTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoCompleteTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31DE838CAD6DE7119A9EF83BA67A133E /* ACTFProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFProtocols.swift; path = Pod/Classes/ACTFProtocols.swift; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		261D9EE165E17E1D62CEDD7E3731A272 /* ACTFConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFConstants.swift; path = Pod/Classes/ACTFConstants.swift; sourceTree = "<group>"; };
 		3893988862E8FBC5BB41312CCA49A524 /* Pods-AutoCompleteTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoCompleteTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		45486F7DA95AD6C3BB95CB4BA963B146 /* Pods-AutoCompleteTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoCompleteTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4FA7052A3F03574043C68D1C3FAE6CB0 /* AutoCompleteTextField-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "AutoCompleteTextField-iOS8.3.modulemap"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3.modulemap"; sourceTree = "<group>"; };
-		502BC212B7B108E1A338EBBF52085E7E /* AutoCompleteTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AutoCompleteTextField.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		539442D52E58D2C9CC5E8E9CEEDA4EE0 /* AutoCompleteTextField-iOS10.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AutoCompleteTextField-iOS10.0.release.xcconfig"; sourceTree = "<group>"; };
+		4C0A1D5774F8BC265C2A210DCB0B0B17 /* ACTFProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFProtocols.swift; path = Pod/Classes/ACTFProtocols.swift; sourceTree = "<group>"; };
 		53F8B37EBEDAFD1CB6C26375833DCD06 /* Pods_AutoCompleteTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCompleteTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58077A34A634143711B5545C679A92A7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5BE49FE32FE368DCB1F79E508D7E61C6 /* AutoCompleteTextField-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AutoCompleteTextField-iOS8.3-umbrella.h"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		5944BC88B018BD26E8A25AF30C7CA158 /* ACTFDomain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFDomain.swift; path = Pod/Classes/ACTFDomain.swift; sourceTree = "<group>"; };
+		5D83C1674465C932A87A2F253EAAE788 /* AutoCompleteTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCompleteTextField-prefix.pch"; sourceTree = "<group>"; };
 		630BD95FB191198230FC73155058257A /* Pods-AutoCompleteTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoCompleteTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		67F63777B1D66F16A0B7746B0C23EE05 /* AutoCompleteTextField-iOS8.3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "AutoCompleteTextField-iOS8.3-Info.plist"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-Info.plist"; sourceTree = "<group>"; };
 		699B7654D1E5A8C4F2EDFDBA602263E4 /* Pods-AutoCompleteTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoCompleteTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7572FF9A46449C3A9C1631EDA1B5FB01 /* Pods-AutoCompleteTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoCompleteTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		758F0B166FA6CFFD362F805172281BC4 /* Pods-AutoCompleteTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoCompleteTextField_Tests-dummy.m"; sourceTree = "<group>"; };
-		779AC6172D90B4ED1BD90794A36BD409 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7E77E1E7C50411A125F61DE85E5BA751 /* ACTFConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFConstants.swift; path = Pod/Classes/ACTFConstants.swift; sourceTree = "<group>"; };
-		83FC48C1A5E1CFFD996323AD5254E0F6 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Pod/Assets/Images.xcassets; sourceTree = "<group>"; };
-		8491FFF1DEC7A9A9B259BCE393BDFEB6 /* AutoCompleteTextField-iOS10.0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutoCompleteTextField-iOS10.0-Info.plist"; sourceTree = "<group>"; };
-		887B670BDC59D0A3AFC3E624D4DA0B75 /* AutoCompleteTextField-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCompleteTextField-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
+		76A49D532832A3F9FE1B6FAC5AAED0CC /* AutoCompleteTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AutoCompleteTextField.modulemap; sourceTree = "<group>"; };
+		82F701B56702AAC5509342EEF1D03EEE /* AutoCompleteTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutoCompleteTextField-Info.plist"; sourceTree = "<group>"; };
+		997D66D3EBC80F768B2D49C8ADE421E8 /* AutoCompleteTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoCompleteTextField.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F01A62C1A9E8B4B0DCA3DE9C3D5B0B5 /* AutoCompleteTextField-iOS8.3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AutoCompleteTextField-iOS8.3.debug.xcconfig"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9274D7BA478A19B5775FF3458A07B6 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCompleteTextField.swift; path = Pod/Classes/AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		9E9DFE326225AB7817E9B76A2B953150 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A2D8F8C47FC119BAD93DE61C6B980992 /* Pods-AutoCompleteTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoCompleteTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A76431A7684237D62FAB6E5F606BE38B /* Pods_AutoCompleteTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCompleteTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACBC41A8B1F13C3E09371BBC213B915 /* AutoCompleteTextField-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AutoCompleteTextField-iOS8.3-dummy.m"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		B06A91A109E157ABB01BD94164C82D8C /* AutoCompleteTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoCompleteTextField-dummy.m"; sourceTree = "<group>"; };
 		B0AEEDFA0B90D900E04CF03B425783EB /* Pods-AutoCompleteTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoCompleteTextField_Example-Info.plist"; sourceTree = "<group>"; };
 		B12ED6FCD39AE4B33A3D4C5A5DAF80E3 /* Pods-AutoCompleteTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoCompleteTextField_Example.modulemap"; sourceTree = "<group>"; };
-		BF5173D87B85475F51CE624CFE275677 /* AutoCompleteTextField-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoCompleteTextField-iOS10.0-dummy.m"; sourceTree = "<group>"; };
-		CD2FAE78685CAA53A4C1570FCC22AF2A /* ACTFLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFLabel.swift; path = Pod/Classes/ACTFLabel.swift; sourceTree = "<group>"; };
-		CE7DAF8A3E52DA9A0C75D241B75B9880 /* AutoCompleteTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoCompleteTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2348140C5747D63EC21B843F8D4920A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC73F54F606810EFD207C8CF5E3037C2 /* AutoCompleteTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoCompleteTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A8483785E5F76D45C3C4B9810B7D1F /* AutoCompleteTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoCompleteTextField.debug.xcconfig; sourceTree = "<group>"; };
 		D3664BE3B34267766E6AC86E697A2C19 /* Pods-AutoCompleteTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoCompleteTextField_Example-dummy.m"; sourceTree = "<group>"; };
-		DCD3CDD7B27F68F44CCE3D7B6687188C /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCompleteTextField.swift; path = Pod/Classes/AutoCompleteTextField.swift; sourceTree = "<group>"; };
-		DD9441D13D48898326BDC37BF144EFD2 /* AutoCompleteTextField-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AutoCompleteTextField-iOS8.3-prefix.pch"; path = "../AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
 		DE84505F707EB05FBAA36C09D9DE9923 /* Pods-AutoCompleteTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoCompleteTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		DED106F6650C6925419715F830EB1C86 /* Pods-AutoCompleteTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoCompleteTextField_Example-umbrella.h"; sourceTree = "<group>"; };
-		EB5D3B8B80EEBC776F19AA20C31BFBBB /* ACTFDomain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFDomain.swift; path = Pod/Classes/ACTFDomain.swift; sourceTree = "<group>"; };
+		EA3CEDAC7EE6BF8D3C48E8A64DAFB0B7 /* AutoCompleteTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCompleteTextField-umbrella.h"; sourceTree = "<group>"; };
+		EDA98910FE5C2EB27D7A7893C7CBC86F /* AutoCompleteTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AutoCompleteTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F0719962507F4B7B15929E07F4D65AE7 /* Pods-AutoCompleteTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoCompleteTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F79BBE5B381DE20FBD36FA1E3C2CFC9F /* AutoCompleteTextField-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCompleteTextField-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
 		F9ADEBCB7D0E5C07F6E37635A197B865 /* Pods-AutoCompleteTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoCompleteTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FBF05EB9DAD698F50ECF0F7828FA71DE /* AutoCompleteTextField-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "AutoCompleteTextField-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		FDDC2D670074C3A9BA18C50B48768C8D /* ACTFLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACTFLabel.swift; path = Pod/Classes/ACTFLabel.swift; sourceTree = "<group>"; };
+		FF059D2EF44814CA9B68B3B7CF3F6D62 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Pod/Assets/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06BF17ACC53D664BDBD24D9321573CC3 /* Frameworks */ = {
+		203542F4C4897370421BF3F26735AB15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F6254A2B9D1019F004AFAE61167931 /* Foundation.framework in Frameworks */,
+				0CAF5E1D198BED3EA8C8425105053F07 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ECC9041157BA95F24565192FFDC62DF /* Frameworks */ = {
+		4D077BDED28D468CBC6F15E488072C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4A518C20F4F63759605690F05D10A /* Foundation.framework in Frameworks */,
+				DEA6C5D3A07CCD43B0D603DB24C08EBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF9E7E3458A81884EC83BB9861E1205 /* Frameworks */ = {
+		6E3DE6DD618E8DB885603A93E76899E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF81242566B22FC0FB435C0BBCDF2BA2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D083178ED1EADF1D23CA257708A1A301 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C80DE6D31B3C18EA5E39A4A0A7F65AC /* Foundation.framework in Frameworks */,
+				065C10CF1D38F255CE1C0DC66A6EFE13 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3066B081B3704254C14C780B1E71861E /* Support Files */ = {
+		34A39E932823BF63440E610F7675448A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FBF05EB9DAD698F50ECF0F7828FA71DE /* AutoCompleteTextField-iOS10.0.modulemap */,
-				BF5173D87B85475F51CE624CFE275677 /* AutoCompleteTextField-iOS10.0-dummy.m */,
-				8491FFF1DEC7A9A9B259BCE393BDFEB6 /* AutoCompleteTextField-iOS10.0-Info.plist */,
-				F79BBE5B381DE20FBD36FA1E3C2CFC9F /* AutoCompleteTextField-iOS10.0-prefix.pch */,
-				887B670BDC59D0A3AFC3E624D4DA0B75 /* AutoCompleteTextField-iOS10.0-umbrella.h */,
-				1A7C04AA307006A26D99C5892569A35F /* AutoCompleteTextField-iOS10.0.debug.xcconfig */,
-				539442D52E58D2C9CC5E8E9CEEDA4EE0 /* AutoCompleteTextField-iOS10.0.release.xcconfig */,
-				4FA7052A3F03574043C68D1C3FAE6CB0 /* AutoCompleteTextField-iOS8.3.modulemap */,
-				AACBC41A8B1F13C3E09371BBC213B915 /* AutoCompleteTextField-iOS8.3-dummy.m */,
-				67F63777B1D66F16A0B7746B0C23EE05 /* AutoCompleteTextField-iOS8.3-Info.plist */,
-				DD9441D13D48898326BDC37BF144EFD2 /* AutoCompleteTextField-iOS8.3-prefix.pch */,
-				5BE49FE32FE368DCB1F79E508D7E61C6 /* AutoCompleteTextField-iOS8.3-umbrella.h */,
-				9F01A62C1A9E8B4B0DCA3DE9C3D5B0B5 /* AutoCompleteTextField-iOS8.3.debug.xcconfig */,
-				0C8259899EF94FE45167E271F55D056D /* AutoCompleteTextField-iOS8.3.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AutoCompleteTextField-iOS10.0";
-			sourceTree = "<group>";
-		};
-		347AF572C4BAEC3C12D1BBEEB1700B3B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				502BC212B7B108E1A338EBBF52085E7E /* AutoCompleteTextField.podspec */,
-				779AC6172D90B4ED1BD90794A36BD409 /* LICENSE */,
-				58077A34A634143711B5545C679A92A7 /* README.md */,
+				EDA98910FE5C2EB27D7A7893C7CBC86F /* AutoCompleteTextField.podspec */,
+				9E9DFE326225AB7817E9B76A2B953150 /* LICENSE */,
+				B2348140C5747D63EC21B843F8D4920A /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -171,7 +124,7 @@
 		4870BE6A88A1E83F92E376F5CC143E57 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C24DC750D045D70E5FC7D0D869225B80 /* AutoCompleteTextField */,
+				E476231356B081777BD267EC285B07B2 /* AutoCompleteTextField */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -193,6 +146,14 @@
 			path = "Target Support Files/Pods-AutoCompleteTextField_Example";
 			sourceTree = "<group>";
 		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		62A9EEE798C04A191878A2ABCC5EEA40 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,47 +163,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6708C5F7A915F53AFB857B410679D9CC /* Products */ = {
+		9D5FD592A004A2AED3687C19B136A71E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E243F1EB9C33BB0469621CCA12091C2 /* AutoCompleteTextField.framework */,
-				CE7DAF8A3E52DA9A0C75D241B75B9880 /* AutoCompleteTextField.framework */,
-				53F8B37EBEDAFD1CB6C26375833DCD06 /* Pods_AutoCompleteTextField_Example.framework */,
-				A76431A7684237D62FAB6E5F606BE38B /* Pods_AutoCompleteTextField_Tests.framework */,
+				76A49D532832A3F9FE1B6FAC5AAED0CC /* AutoCompleteTextField.modulemap */,
+				B06A91A109E157ABB01BD94164C82D8C /* AutoCompleteTextField-dummy.m */,
+				82F701B56702AAC5509342EEF1D03EEE /* AutoCompleteTextField-Info.plist */,
+				5D83C1674465C932A87A2F253EAAE788 /* AutoCompleteTextField-prefix.pch */,
+				EA3CEDAC7EE6BF8D3C48E8A64DAFB0B7 /* AutoCompleteTextField-umbrella.h */,
+				D1A8483785E5F76D45C3C4B9810B7D1F /* AutoCompleteTextField.debug.xcconfig */,
+				997D66D3EBC80F768B2D49C8ADE421E8 /* AutoCompleteTextField.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C24DC750D045D70E5FC7D0D869225B80 /* AutoCompleteTextField */ = {
-			isa = PBXGroup;
-			children = (
-				7E77E1E7C50411A125F61DE85E5BA751 /* ACTFConstants.swift */,
-				EB5D3B8B80EEBC776F19AA20C31BFBBB /* ACTFDomain.swift */,
-				CD2FAE78685CAA53A4C1570FCC22AF2A /* ACTFLabel.swift */,
-				31DE838CAD6DE7119A9EF83BA67A133E /* ACTFProtocols.swift */,
-				DCD3CDD7B27F68F44CCE3D7B6687188C /* AutoCompleteTextField.swift */,
-				347AF572C4BAEC3C12D1BBEEB1700B3B /* Pod */,
-				C283F8FFC48A59E502E102A0C24FFA27 /* Resources */,
-				3066B081B3704254C14C780B1E71861E /* Support Files */,
-			);
-			name = AutoCompleteTextField;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C283F8FFC48A59E502E102A0C24FFA27 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				83FC48C1A5E1CFFD996323AD5254E0F6 /* Images.xcassets */,
-			);
-			name = Resources;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AutoCompleteTextField";
 			sourceTree = "<group>";
 		};
 		C3BE817F168BA1B8D120439DD2D42A42 /* Pods-AutoCompleteTextField_Tests */ = {
@@ -268,128 +201,128 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				4870BE6A88A1E83F92E376F5CC143E57 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6708C5F7A915F53AFB857B410679D9CC /* Products */,
+				D1F81993EA561E01593A1A63324FB6BF /* Products */,
 				62A9EEE798C04A191878A2ABCC5EEA40 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1F81993EA561E01593A1A63324FB6BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC73F54F606810EFD207C8CF5E3037C2 /* AutoCompleteTextField.framework */,
+				53F8B37EBEDAFD1CB6C26375833DCD06 /* Pods_AutoCompleteTextField_Example.framework */,
+				A76431A7684237D62FAB6E5F606BE38B /* Pods_AutoCompleteTextField_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E476231356B081777BD267EC285B07B2 /* AutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				261D9EE165E17E1D62CEDD7E3731A272 /* ACTFConstants.swift */,
+				5944BC88B018BD26E8A25AF30C7CA158 /* ACTFDomain.swift */,
+				FDDC2D670074C3A9BA18C50B48768C8D /* ACTFLabel.swift */,
+				4C0A1D5774F8BC265C2A210DCB0B0B17 /* ACTFProtocols.swift */,
+				9E9274D7BA478A19B5775FF3458A07B6 /* AutoCompleteTextField.swift */,
+				FF059D2EF44814CA9B68B3B7CF3F6D62 /* Images.xcassets */,
+				34A39E932823BF63440E610F7675448A /* Pod */,
+				9D5FD592A004A2AED3687C19B136A71E /* Support Files */,
+			);
+			name = AutoCompleteTextField;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2757FAF2ABAD320D923221C6BA869BB0 /* Headers */ = {
+		1095B1A0D1AB93C2009CE85879AE7ADE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E09B578DFD8CEFF329A8AFA1BF7618F8 /* AutoCompleteTextField-iOS10.0-umbrella.h in Headers */,
+				F2BA31D2C1CB2744AFAE86CB13488315 /* Pods-AutoCompleteTextField_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86ABCD92BED04FA3DE9130FDEEA2FCD6 /* Headers */ = {
+		439B3623F6894DB22EC3EF39A0AA7979 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8153FBC53066E6BBB7F07D85D6A8EA8F /* AutoCompleteTextField-iOS8.3-umbrella.h in Headers */,
+				6EEDF79F2222CFAA7DE8E6E92320D210 /* Pods-AutoCompleteTextField_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B229415C345DE958AE828600E6574E39 /* Headers */ = {
+		6BE14A7DD9E534CCD14F5E5E0A928D07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB8FDA5E7F96BE1D598DA62E997E43CD /* Pods-AutoCompleteTextField_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4A59C57169E406233DE457F28DEE0C2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAFB6BC45DC7837303B25B7973A6C4A4 /* Pods-AutoCompleteTextField_Tests-umbrella.h in Headers */,
+				88385B359A78B5BDCE59D39A1836AADF /* AutoCompleteTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7AF8C35DA7AF233870CC954115506C6D /* AutoCompleteTextField-iOS8.3 */ = {
+		DC4A1A5AA982B1775A2698C96685730A /* AutoCompleteTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 252E30CCC3E56BB1714CA4E1370BE562 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField-iOS8.3" */;
+			buildConfigurationList = 1016B9BB3ADD12E7A2C180F45DC1E581 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField" */;
 			buildPhases = (
-				86ABCD92BED04FA3DE9130FDEEA2FCD6 /* Headers */,
-				331625CE2B5EB802DB1CADA141E0524E /* Sources */,
-				CEF9E7E3458A81884EC83BB9861E1205 /* Frameworks */,
-				7183343B35AA97FF2CAAF8A852D75F88 /* Resources */,
+				6BE14A7DD9E534CCD14F5E5E0A928D07 /* Headers */,
+				F4D38082C848B3588E8588754EB39B2E /* Sources */,
+				4D077BDED28D468CBC6F15E488072C6C /* Frameworks */,
+				74828CA6EDED1086D75AFE28F298565F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "AutoCompleteTextField-iOS8.3";
-			productName = "AutoCompleteTextField-iOS8.3";
-			productReference = CE7DAF8A3E52DA9A0C75D241B75B9880 /* AutoCompleteTextField.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B40C086B3607D05356B76D5DB7E80409 /* AutoCompleteTextField-iOS10.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE79BA8A090252BCAEF73BD2444A006 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField-iOS10.0" */;
-			buildPhases = (
-				2757FAF2ABAD320D923221C6BA869BB0 /* Headers */,
-				DD1C7C8ECC87155DE81C139B412D8CE8 /* Sources */,
-				06BF17ACC53D664BDBD24D9321573CC3 /* Frameworks */,
-				231C58608767D39ECBA7E55E62A79F41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "AutoCompleteTextField-iOS10.0";
-			productName = "AutoCompleteTextField-iOS10.0";
-			productReference = 2E243F1EB9C33BB0469621CCA12091C2 /* AutoCompleteTextField.framework */;
+			name = AutoCompleteTextField;
+			productName = AutoCompleteTextField;
+			productReference = BC73F54F606810EFD207C8CF5E3037C2 /* AutoCompleteTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DF206B3BA01423F122B63666478BA479 /* Pods-AutoCompleteTextField_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45AA64570177B2ABE2BDAED3769E9DFC /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Tests" */;
+			buildConfigurationList = 4263F2D3BFD5FA5B29672BD711288DA3 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Tests" */;
 			buildPhases = (
-				E4A59C57169E406233DE457F28DEE0C2 /* Headers */,
-				718806A43E91DACC4595E6A040535831 /* Sources */,
-				D083178ED1EADF1D23CA257708A1A301 /* Frameworks */,
-				954196D8759F53CD7D585F0B209CF261 /* Resources */,
+				439B3623F6894DB22EC3EF39A0AA7979 /* Headers */,
+				C2A2FE7E384658229AD128B464307CE9 /* Sources */,
+				203542F4C4897370421BF3F26735AB15 /* Frameworks */,
+				B1A797D68CCB04F4425632906F55105F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				977EB5501A9F18EA48AF4BB13519A97E /* PBXTargetDependency */,
+				C7459C90347026E63053110873FC9322 /* PBXTargetDependency */,
 			);
 			name = "Pods-AutoCompleteTextField_Tests";
-			productName = "Pods-AutoCompleteTextField_Tests";
+			productName = Pods_AutoCompleteTextField_Tests;
 			productReference = A76431A7684237D62FAB6E5F606BE38B /* Pods_AutoCompleteTextField_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F7411006DCFA4059EF9389515F0AFD24 /* Pods-AutoCompleteTextField_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D52D9247C77A6240179A329233F98367 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Example" */;
+			buildConfigurationList = 99DD914449E0592745C4AC0577346620 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Example" */;
 			buildPhases = (
-				B229415C345DE958AE828600E6574E39 /* Headers */,
-				745CD1E470899748444F90A8AAD014AC /* Sources */,
-				4ECC9041157BA95F24565192FFDC62DF /* Frameworks */,
-				8B1D0DC85C0F7761B93D91A3879B298A /* Resources */,
+				1095B1A0D1AB93C2009CE85879AE7ADE /* Headers */,
+				5DDA7B5455D0CF33E0FD05501424B2FA /* Sources */,
+				6E3DE6DD618E8DB885603A93E76899E1 /* Frameworks */,
+				DB3172282D8ACCB26793B6382F78C446 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A280E3C1F76A6CADA98069E4536FA88 /* PBXTargetDependency */,
+				0E542D9B02CC5E4436A8932C6183CA4C /* PBXTargetDependency */,
 			);
 			name = "Pods-AutoCompleteTextField_Example";
-			productName = "Pods-AutoCompleteTextField_Example";
+			productName = Pods_AutoCompleteTextField_Example;
 			productReference = 53F8B37EBEDAFD1CB6C26375833DCD06 /* Pods_AutoCompleteTextField_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -399,32 +332,24 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					7AF8C35DA7AF233870CC954115506C6D = {
-						LastSwiftMigration = 1140;
-					};
-					B40C086B3607D05356B76D5DB7E80409 = {
-						LastSwiftMigration = 1140;
-					};
-				};
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1430;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6708C5F7A915F53AFB857B410679D9CC /* Products */;
+			productRefGroup = D1F81993EA561E01593A1A63324FB6BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B40C086B3607D05356B76D5DB7E80409 /* AutoCompleteTextField-iOS10.0 */,
-				7AF8C35DA7AF233870CC954115506C6D /* AutoCompleteTextField-iOS8.3 */,
+				DC4A1A5AA982B1775A2698C96685730A /* AutoCompleteTextField */,
 				F7411006DCFA4059EF9389515F0AFD24 /* Pods-AutoCompleteTextField_Example */,
 				DF206B3BA01423F122B63666478BA479 /* Pods-AutoCompleteTextField_Tests */,
 			);
@@ -432,30 +357,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		231C58608767D39ECBA7E55E62A79F41 /* Resources */ = {
+		74828CA6EDED1086D75AFE28F298565F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E833DFCABD9C53E129476523BF80E4A /* Images.xcassets in Resources */,
+				B0F8DD8EDE7A2A5235710EF40F6DD2EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7183343B35AA97FF2CAAF8A852D75F88 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4393CF2BBA4001CD33F45A2DAD6629DB /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B1D0DC85C0F7761B93D91A3879B298A /* Resources */ = {
+		B1A797D68CCB04F4425632906F55105F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		954196D8759F53CD7D585F0B209CF261 /* Resources */ = {
+		DB3172282D8ACCB26793B6382F78C446 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,102 +382,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		331625CE2B5EB802DB1CADA141E0524E /* Sources */ = {
+		5DDA7B5455D0CF33E0FD05501424B2FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024B697646021116F1464FA67F1A4F98 /* ACTFConstants.swift in Sources */,
-				D682EB5903BCA40FF47855CF48F4F1B1 /* ACTFDomain.swift in Sources */,
-				687A380D221D43B7B7DB7777A128412E /* ACTFLabel.swift in Sources */,
-				EE348B0D4F7A4AB41F1EAFF74188A9AE /* ACTFProtocols.swift in Sources */,
-				AD3AD64BB4400844402379D57F632984 /* AutoCompleteTextField-iOS8.3-dummy.m in Sources */,
-				1DDBCC20991E5E4FBD6500279C16DE82 /* AutoCompleteTextField.swift in Sources */,
+				91F1CC68BB783E89D434D91B51ADEE94 /* Pods-AutoCompleteTextField_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		718806A43E91DACC4595E6A040535831 /* Sources */ = {
+		C2A2FE7E384658229AD128B464307CE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3C04EFA7B0D9676C351FE10C4FD510 /* Pods-AutoCompleteTextField_Tests-dummy.m in Sources */,
+				BAD14D64534A31860D49B6971E0237B6 /* Pods-AutoCompleteTextField_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		745CD1E470899748444F90A8AAD014AC /* Sources */ = {
+		F4D38082C848B3588E8588754EB39B2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52228B4643D9A10719D0A119F0376BC8 /* Pods-AutoCompleteTextField_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD1C7C8ECC87155DE81C139B412D8CE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C7904DFA7852A5401519A1DAE5EEF7E /* ACTFConstants.swift in Sources */,
-				E5FE41547AA8D8A3B1219E9B0F5FD193 /* ACTFDomain.swift in Sources */,
-				774D82529A88838B10D8C30EEC654CFB /* ACTFLabel.swift in Sources */,
-				C06C4B918F66C419A308E41902E1E43B /* ACTFProtocols.swift in Sources */,
-				1E6AD9DEACA94B84B5C01A198D099746 /* AutoCompleteTextField-iOS10.0-dummy.m in Sources */,
-				84C16DEAA183E1EEE6211978B64F7D62 /* AutoCompleteTextField.swift in Sources */,
+				4E871FC430DFD135FA2AAFF8A3A00532 /* ACTFConstants.swift in Sources */,
+				54E9D0504BDAEB49E3336550D9BFC5F2 /* ACTFDomain.swift in Sources */,
+				B34915E8CF88393D67E9BE172F9D3BDA /* ACTFLabel.swift in Sources */,
+				E0CB054C11F5C8F84B954EBA5B2F40DA /* ACTFProtocols.swift in Sources */,
+				D3E5B89ECFDD63D8A364933B46D95721 /* AutoCompleteTextField.swift in Sources */,
+				736370830D0E803A202E81AF541BDE26 /* AutoCompleteTextField-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A280E3C1F76A6CADA98069E4536FA88 /* PBXTargetDependency */ = {
+		0E542D9B02CC5E4436A8932C6183CA4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AutoCompleteTextField-iOS10.0";
-			target = B40C086B3607D05356B76D5DB7E80409 /* AutoCompleteTextField-iOS10.0 */;
-			targetProxy = E1FF9A6E8D9AF32DCBE3885F806ED06E /* PBXContainerItemProxy */;
+			name = AutoCompleteTextField;
+			target = DC4A1A5AA982B1775A2698C96685730A /* AutoCompleteTextField */;
+			targetProxy = 953F654CA9C17A215B0960AEBEA15D43 /* PBXContainerItemProxy */;
 		};
-		977EB5501A9F18EA48AF4BB13519A97E /* PBXTargetDependency */ = {
+		C7459C90347026E63053110873FC9322 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AutoCompleteTextField-iOS8.3";
-			target = 7AF8C35DA7AF233870CC954115506C6D /* AutoCompleteTextField-iOS8.3 */;
-			targetProxy = 6733B2DBD9EBE42A7797FB3686169EEF /* PBXContainerItemProxy */;
+			name = AutoCompleteTextField;
+			target = DC4A1A5AA982B1775A2698C96685730A /* AutoCompleteTextField */;
+			targetProxy = 11CB603D0593413726726C1168316A78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A5C361DB513A4376BD48783ADD7277C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A7C04AA307006A26D99C5892569A35F /* AutoCompleteTextField-iOS10.0.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0.modulemap";
-				PRODUCT_MODULE_NAME = AutoCompleteTextField;
-				PRODUCT_NAME = AutoCompleteTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -583,6 +456,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -590,163 +464,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		612CABB91DBF4B750E9CD66E1C1CC326 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 539442D52E58D2C9CC5E8E9CEEDA4EE0 /* AutoCompleteTextField-iOS10.0.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField-iOS10.0/AutoCompleteTextField-iOS10.0.modulemap";
-				PRODUCT_MODULE_NAME = AutoCompleteTextField;
-				PRODUCT_NAME = AutoCompleteTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		612F7479D186BB12AEA46CED7C8F9B3A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C8259899EF94FE45167E271F55D056D /* AutoCompleteTextField-iOS8.3.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3.modulemap";
-				PRODUCT_MODULE_NAME = AutoCompleteTextField;
-				PRODUCT_NAME = AutoCompleteTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		727A3654C77D939AA09A0534330117AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F01A62C1A9E8B4B0DCA3DE9C3D5B0B5 /* AutoCompleteTextField-iOS8.3.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField-iOS8.3/AutoCompleteTextField-iOS8.3.modulemap";
-				PRODUCT_MODULE_NAME = AutoCompleteTextField;
-				PRODUCT_NAME = AutoCompleteTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E1F3D358966F24610AD782F313B4C40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -765,12 +483,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -778,128 +495,93 @@
 			};
 			name = Debug;
 		};
-		B0EE33F22C7046016898F224BB2E080E /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21267F9A24766F58C9158519BA82D446 /* Pods-AutoCompleteTextField_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		BBC701CE59B750E510344D8DD60FEB1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 630BD95FB191198230FC73155058257A /* Pods-AutoCompleteTextField_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D51F886439AEEC9244C4EB0132C37735 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9ADEBCB7D0E5C07F6E37635A197B865 /* Pods-AutoCompleteTextField_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E692D4C3D663981E3F612B81AD188D1E /* Release */ = {
+		68A6C5BA5185A19504D4869BE07C40B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3893988862E8FBC5BB41312CCA49A524 /* Pods-AutoCompleteTextField_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -914,23 +596,211 @@
 			};
 			name = Release;
 		};
+		AF22ED783B7AD6ABC0CB8BDB55C06806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9ADEBCB7D0E5C07F6E37635A197B865 /* Pods-AutoCompleteTextField_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Example/Pods-AutoCompleteTextField_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4280D06708BC4C23B66BB8264326C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A8483785E5F76D45C3C4B9810B7D1F /* AutoCompleteTextField.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = AutoCompleteTextField;
+				PRODUCT_NAME = AutoCompleteTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBE3F8AFB5FA236EC49141A751AA5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21267F9A24766F58C9158519BA82D446 /* Pods-AutoCompleteTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6CF5DA28F4EBD9A9A412B5437CEE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997D66D3EBC80F768B2D49C8ADE421E8 /* AutoCompleteTextField.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AutoCompleteTextField/AutoCompleteTextField.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_MODULE_NAME = AutoCompleteTextField;
+				PRODUCT_NAME = AutoCompleteTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC4A5FA870B1EAEB7A6C5A4ACE75B0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BD95FB191198230FC73155058257A /* Pods-AutoCompleteTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoCompleteTextField_Tests/Pods-AutoCompleteTextField_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		252E30CCC3E56BB1714CA4E1370BE562 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField-iOS8.3" */ = {
+		1016B9BB3ADD12E7A2C180F45DC1E581 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				727A3654C77D939AA09A0534330117AE /* Debug */,
-				612F7479D186BB12AEA46CED7C8F9B3A /* Release */,
+				B4280D06708BC4C23B66BB8264326C5F /* Debug */,
+				E6CF5DA28F4EBD9A9A412B5437CEE0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45AA64570177B2ABE2BDAED3769E9DFC /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Tests" */ = {
+		4263F2D3BFD5FA5B29672BD711288DA3 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBC701CE59B750E510344D8DD60FEB1A /* Debug */,
-				B0EE33F22C7046016898F224BB2E080E /* Release */,
+				EC4A5FA870B1EAEB7A6C5A4ACE75B0FA /* Debug */,
+				DBE3F8AFB5FA236EC49141A751AA5961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -938,26 +808,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E1F3D358966F24610AD782F313B4C40 /* Debug */,
-				60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE79BA8A090252BCAEF73BD2444A006 /* Build configuration list for PBXNativeTarget "AutoCompleteTextField-iOS10.0" */ = {
+		99DD914449E0592745C4AC0577346620 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A5C361DB513A4376BD48783ADD7277C /* Debug */,
-				612CABB91DBF4B750E9CD66E1C1CC326 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D52D9247C77A6240179A329233F98367 /* Build configuration list for PBXNativeTarget "Pods-AutoCompleteTextField_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D51F886439AEEC9244C4EB0132C37735 /* Debug */,
-				E692D4C3D663981E3F612B81AD188D1E /* Release */,
+				AF22ED783B7AD6ABC0CB8BDB55C06806 /* Debug */,
+				68A6C5BA5185A19504D4869BE07C40B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
