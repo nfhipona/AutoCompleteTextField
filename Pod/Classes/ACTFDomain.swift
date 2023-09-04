@@ -26,8 +26,7 @@ public struct ACTFDomain: Codable {
     
     public mutating func updateWeightUsage() {
         weight += 1
-        
-        store(withKey: text)
+        store()
     }
 }
 
@@ -35,14 +34,14 @@ extension ACTFDomain {
     
     /// Store domain with a specific key
     @discardableResult
-    public func store(withKey key: String? = nil) -> Bool {
+    public func store() -> Bool {
         // store
-        let storeKey = key ?? text
         guard let encoded = try? PropertyListEncoder().encode(self),
               let archived = try? NSKeyedArchiver.archivedData(withRootObject: encoded, requiringSecureCoding: true)
         else { return false }
         
-        UserDefaults.standard.set(archived, forKey: storeKey)
+        UserDefaults.standard.set(archived, forKey: text)
+        UserDefaults.standard.synchronize()
         return true
     }
     
@@ -56,32 +55,18 @@ extension ACTFDomain {
               let decoded = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSData.self, from: data) as? Data,
               let domain = try? PropertyListDecoder().decode(ACTFDomain.self, from: decoded)
         else { return nil } // retrieve failed
-        
         return domain
     }
     
     /// Store domains for a specific key
     @discardableResult
-    public static func store(domains: [ACTFDomain], withKey key: String) -> Bool {
-        // store
-        guard let encoded = try? PropertyListEncoder().encode(domains),
-              let archived = try? NSKeyedArchiver.archivedData(withRootObject: encoded, requiringSecureCoding: true)
-        else { return false }
-        
-        UserDefaults.standard.set(archived, forKey: key)
-        
-        return true
-    }
-    
-    /// Retrieve domains for a specific key
-    @discardableResult
-    public static func domains(forKey key: String) -> [ACTFDomain]? {
-        // retrieved
-        guard let data = UserDefaults.standard.object(forKey: key) as? Data,
-              let decoded = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSData.self, from: data) as? Data,
-              let domains = try? PropertyListDecoder().decode([ACTFDomain].self, from: decoded)
-        else { return nil } // retrieve failed
-        
-        return domains
+    public static func store(domains: [ACTFDomain], withKey key: String) -> [String] {
+        var errors: [String] = []
+        for domain in domains {
+            if !domain.store() {
+                errors.append("Domain '\(domain.text)' store failed")
+            }
+        }
+        return errors
     }
 }
