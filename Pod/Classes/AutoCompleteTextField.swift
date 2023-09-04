@@ -14,11 +14,20 @@ public class AutoCompleteTextField: UITextField {
     
     /// AutoCompleteTextField data source
     weak public var dataSource: ACTFDataSource?
+    /// AutoCompleteTextField optional notifier delegate
+    weak public var actfDelegate: ACTFDelegate?
     
     /// AutoCompleteTextField data source accessible through IB
-    @IBOutlet weak internal var actfDataSource: AnyObject? {
+    @IBOutlet weak internal var _actfDataSource: AnyObject? {
         didSet {
-            dataSource = actfDataSource as? ACTFDataSource
+            dataSource = _actfDataSource as? ACTFDataSource
+        }
+    }
+    
+    /// AutoCompleteTextField data source accessible through IB
+    @IBOutlet weak internal var _actfDelegate: AnyObject? {
+        didSet {
+            actfDelegate = _actfDelegate as? ACTFDelegate
         }
     }
     

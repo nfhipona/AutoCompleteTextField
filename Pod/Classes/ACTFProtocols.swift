@@ -12,8 +12,13 @@ import UIKit
 // MARK: - AutoCompleteTextField Protocol
 
 public protocol ACTFDataSource: AnyObject {
-    
     // Required protocols
     
-    func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [ACTFDomain] // called when in need of suggestions.
+    /// called when in need of suggestions.
+    func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [ACTFDomain]
+}
+
+public protocol ACTFDelegate: UITextFieldDelegate {
+    /// will be called upon successful suggestion
+    func autoCompleteTextField(_ autoCompleteTextField: AutoCompleteTextField, didSuggestDomain domain: ACTFDomain)
 }
