@@ -26,7 +26,10 @@ public class ACTFDomain: Codable {
     
     public func updateWeightUsage() {
         weight += 1
-        store()
+        
+        if isAutoStoringEnabled {
+            store()
+        }
     }
 }
 
