@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "AutoCompleteTextField"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.swift_version    = "5"
   s.platform         = :ios, '12.0'
   s.summary          = "TextField Subclass with auto completion feature."
